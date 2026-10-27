@@ -32,6 +32,8 @@ env:
 jobs:
   build_release:
     name: build release
+    # release/build_devel.sh fetches the commaai-only __nightly ref; skip on forks
+    if: github.repository == 'commaai/openpilot'
     runs-on: ${{ 
       (github.repository == 'commaai/openpilot') && 
       ((github.event_name != 'pull_request') || 
