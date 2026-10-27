@@ -1,3 +1,10 @@
+Version 0.9.9-cityg7-blackpanda (2026-10-27)
+========================
+* Community fork of openpilot 0.9.9 for the comma black panda (STM32F4)
+  * Honda City 2023 (Brazil) support, backported from commaai/opendbc #2425 (vanillagorillaa and drFritz)
+  * Honda: EPB_STATUS parsing gated by HAS_EPB auto-detection (backport of commaai/opendbc #2458)
+  * opendbc submodule tracks kriptomad/opendbc branch firmwarecityg7-v0.9.9; panda stays at e462c34d (last with black panda support)
+
 Version 0.9.9 (2025-05-23)
 ========================
 * New driving model
