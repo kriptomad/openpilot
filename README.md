@@ -30,6 +30,19 @@ Quick start: `bash <(curl -fsSL openpilot.comma.ai)`
 
 </div>
 
+> [!IMPORTANT]
+> **Fork branch `v0.9.9-cityg7-blackpanda` — work in progress.**
+> This branch ports the **Honda City (Brazil only) 2023 (G7)** support, merged upstream in
+> opendbc after openpilot 0.9.9, back onto openpilot **v0.9.9** — the last release that still
+> supports the STM32F4 **black panda**. The goal is a byte-for-byte faithful port of every
+> upstream change the City depends on (fingerprints, DBC, car interface, safety, docs, tests),
+> plus the follow-up upstream fixes the City needs to engage (EPB message refactor).
+>
+> Status: port complete, under CI validation and code audit. Not yet road tested.
+> See `RELEASES.md`, `docs/CARS.md` and the `opendbc_repo` submodule
+> ([kriptomad/opendbc@firmwarecityg7-v0.9.9](https://github.com/kriptomad/opendbc/tree/firmwarecityg7-v0.9.9)).
+> Base: commaai/openpilot v0.9.9 (`8aadf02b`). CI badge above points at upstream, not this fork.
+
 <table>
   <tr>
     <td><a href="https://youtu.be/NmBfgOanCyk" title="Video By Greer Viau"><img src="https://github.com/commaai/openpilot/assets/8762862/2f7112ae-f748-4f39-b617-fabd689c3772"></a></td>
